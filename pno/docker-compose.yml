@@ -1,0 +1,17 @@
+version: '2.3'
+services:
+
+  jupyter:
+    build: .
+    runtime: nvidia
+    ports:
+      - "2020:8888"
+    volumes:
+      - ./notebooks:/notebooks
+      - ./data/Lurz2020:/notebooks/data
+    environment:
+      - JUPYTER_PASSWORD=cotton2020
+      - NVIDIA_VISIBLE_DEVICES=0
+    container_name: cotton2020
+    hostname: cotton2020
+
