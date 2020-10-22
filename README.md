@@ -1,3 +1,6 @@
+
+![High level overview of FNP architecture](images/high_level_factorized.png)
+
 # Training the model
 
     PYTHONPATH="." python tuning_manifold/train.py \ 
