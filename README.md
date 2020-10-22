@@ -1,5 +1,5 @@
 
-![High level overview of FNP architecture](images/high_level_factorized.png)
+![High level overview of FNP architecture](images/high_level_factorized_tight.png)
 
 # Examples
 * ``notebooks/simulation_experiments.ipynb`` - explore a FNP pretrained on simulated simple/complex cells
