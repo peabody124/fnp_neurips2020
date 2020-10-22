@@ -1,6 +1,10 @@
 
 ![High level overview of FNP architecture](images/high_level_factorized.png)
 
+# Examples
+* ``notebooks/simulation_experiments.ipynb`` - explore a FNP pretrained on simulated simple/complex cells
+* ``notebooks/visual_experiments.ipynb`` - measure performance of a FNP pretrained on real responses
+
 # Training the model
 
     PYTHONPATH="." python tuning_manifold/train.py \ 
