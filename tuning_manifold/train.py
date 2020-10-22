@@ -18,11 +18,14 @@ model_path = '/models/'
 
 # Catch when we are not running in docker
 if not os.path.isdir(log_path):
-    log_path = '~/projects/tuning_manifold/logs'
+    log_path = './logs'
+    if not os.path.isdir(log_path): os.mkdir(log_path)
 if not os.path.isdir(data_path):
-    data_path = '~/projects/tuning_manifold/data/'
+    data_path = './data/'
+    if not os.path.isdir(data_path): os.mkdir(data_path)
 if not os.path.isdir(model_path):
-    model_path = '~/projects/tuning_manifold/models/'
+    model_path = './models/'
+    if not os.path.isdir(model_path): os.mkdir(model_path)
 
 
 FLAGS = flags.FLAGS
